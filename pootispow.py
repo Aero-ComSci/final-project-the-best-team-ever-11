@@ -95,7 +95,7 @@ def AClick():
 
 
 def BClick():
-    labelerror.config(text=f"{'Removed'}{' '}{activities.get('end')}{'.'}",fg="green")
+    labelerror.config(text=f"{'Removed'}{' '}{activities.get('end')}",fg="green")
     activities.delete("end")
     root.after(3000, lambda: [labelerror.config(text='...'), labelerror.config(fg="black")])
 
